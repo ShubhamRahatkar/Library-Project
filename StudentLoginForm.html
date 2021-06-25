@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Student Login</title>
+        
+    </head>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .body{
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: sans-serif;
+        }
+        .container{
+         position: relative;
+        margin-top: 100px;
+        width: 450px;
+        height: 350px;
+        background: #dedede;
+        border-radius: 5px;
+
+        }
+        .label{
+            padding: 20px 130px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #130f40;
+        }
+        .login_form{
+            padding: 20px 40px;
+        }
+        .login_form .font{
+            font-size: 18px;
+            color:#130f40;
+            margin: 5px 0;
+        }
+
+        .login_form input{
+            height: 40px;
+        width: 350px;
+        padding: 0 5px;
+        font-size: 18px;
+        outline: none;
+        border: 1px solid silver;
+        }
+        .login_form .font2{
+            margin-top: 30px;
+        }
+        
+
+    .login_form #username-error,
+    .login_form #pass-error{
+        margin-top: 5px;
+        width:345px;
+        font-size: 18px;
+        color: #c62828;
+        background: rgba(255,0,0,0.1);
+        text-align: center;
+        padding: 5px 8px;
+        border-radius: 3px;
+        border:1px solid #ef9a9a;
+        display: none;
+    }
+           
+    </style>
+    <body style="background-image: url(https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80); background-size:100% 100%">
+    <center>
+        <div class="container">
+        
+        <h1 class="label"> StudentLogin</h1>
+        <form class="login_form" action="AdminDashBoard.html" method="POST" name="form" onsubmit="return validated()">
+            <div class="font">Username</div>
+            <input type="text" name="username">
+            <div id="username-error">Please fill  your username</div>
+            <div class="font2">Password</div>
+            <input type="password" name="password">
+            <div id="pass-error">Please fill up your password</div>
+            <br> 
+            
+        </form>
+        <a href="StudentDashBoard.html">
+                <button type="submit">Submit</button>
+            </a>
+    </div>
+</center>
+    </body>
+</html>
