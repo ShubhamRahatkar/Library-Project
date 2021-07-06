@@ -34,5 +34,16 @@ public class BookService
 	{  
 	return bookrepo.findById(id).get();  
 	}  
+	
+	
+	public void delete(int id)   
+	{  
+	bookrepo.deleteById(id);  
+	}  
+	
+	public void update(Book book, int bookid)   
+	{  
+	bookrepo.save(book);  
+	}  
 
 }
